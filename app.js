@@ -54,9 +54,9 @@ console.log(responseFive);
 console.log(numberGuess);*/
 
 var numberGuess = parseInt(prompt ('Between 1 to 50. What number am i guessing?'));
-var counter = 3;
-while (numberGuess !== 23 && counter > 0) {
-  counter--; 
+var counter = 0;
+while (numberGuess !== 23 && counter < 3) {
+  counter++; 
 
   if (numberGuess < 23) {
     numberGuess = parseInt(prompt('too low guess again.'));
