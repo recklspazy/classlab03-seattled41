@@ -49,9 +49,10 @@ if (responseFive === 'Y' || responseFive === 'YES'){
 else if (responseFive === 'N' || responseFive === 'NO'){
   alert ('Actually i am very tired from switching shift around.');
 }
-console.log(responseFive); */
+console.log(responseFive);
 
 var favNum = 23;
+console.log('favNum', favNum);
 var numberGuess = parseInt(prompt ('Between 1 to 50. What number am i guessing?'));
 var counter = 0;
 while (numberGuess !== favNum && counter < 3) { 
@@ -61,22 +62,32 @@ while (numberGuess !== favNum && counter < 3) {
   } else {
     numberGuess = parseInt(prompt('too high. guess again.'));
     counter ++;
-  } 
+
+  }
 }
 console.log('counter',counter);
-console.log('numberGuess',numberGuess);
+console.log('numberGuess',numberGuess); */
 
 
 
 
-/*var states = ['california','kentucky','maryland'];
-var guessState = parseInt(prompt ('Guess what state i have visited?'));
-var counter = 5;
-console.log(states);
-while ( guessState !== states && counter > 6)
-{ counter --;}
-if (guessState === states) {
-  states = parseInt(prompt('That is correct.'));
-} else {
-	guessState = parseInt(prompt('Try again.')); } */
-	
+var states = ['california','kentucky','maryland'];
+var guessState = prompt ('Guess what state i have visited?');
+var counter2 = 0;
+var answer = false;
+
+while (counter2 <5 && answer === false) {
+  for(var places = 0; places <= states.length; places++){
+    if(guessState === states[places]) {
+      alert('You are right');
+      counter2 ++;
+      break;
+    } else {
+      guessState = prompt ('guess again.');
+      counter2 ++;
+      break;
+    }
+  } 
+if(counter2 === 6){
+  alert ('you are out of tries');}
+}  
