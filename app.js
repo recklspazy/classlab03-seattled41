@@ -1,5 +1,5 @@
 "use strict";
-alert('Please respond to the following questions with Y/ y/ YES/ Yes/ yes OR N/ n/ NO/ No,');
+/*alert('Please respond to the following questions with Y/ y/ YES/ Yes/ yes OR N/ n/ NO/ No,');
 
 console.log(responseOne);
 
@@ -51,8 +51,8 @@ else if (responseFive === 'N' || responseFive === 'NO'){
 }
 console.log(responseFive);
 
-console.log(numberGuess);
-
+console.log(numberGuess);*/
+var answer = 23;
 var numberGuess = parseInt(prompt ('Between 1 to 50. What number am i guessing?'));
 var counter = 3;
 while (numberGuess !== 23 && counter > 0) {
@@ -62,8 +62,21 @@ while (numberGuess !== 23 && counter > 0) {
     numberGuess = parseInt(prompt('too low guess again.'));
   } else {
     numberGuess = parseInt(prompt('too high. guess again.'));
-  } if (numberGuess === 23) {
-    alert ('Yay. You got it.');
+  } if (answer === 23) {
+    alert ('you got it.');
   }
 }
+console.log(counter);
 console.log(numberGuess);
+console.log(answer);
+/*var states = ['california','kentucky','maryland'];
+var guessState = parseInt(prompt ('Guess what state i have visited?'));
+var counter = 5;
+console.log(states);
+while ( guessState !== states && counter > 6)
+{ counter --;}
+if (guessState === states) {
+  states = parseInt(prompt('That is correct.'));
+} else {
+  guessState = parseInt(prompt('Try again.')); }*/
+
