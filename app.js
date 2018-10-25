@@ -49,23 +49,22 @@ if (responseFive === 'Y' || responseFive === 'YES'){
 else if (responseFive === 'N' || responseFive === 'NO'){
   alert ('Actually i am very tired from switching shift around.');
 }
-console.log(responseFive);
+console.log(responseFive); */
 
-console.log(numberGuess);*/
-
+var favNum = 23;
 var numberGuess = parseInt(prompt ('Between 1 to 50. What number am i guessing?'));
 var counter = 0;
-while (numberGuess !== 23 && counter < 3) {
-  counter++; 
-
-  if (numberGuess < 23) {
+while (numberGuess !== favNum && counter < 3) { 
+  if (numberGuess < favNum) {
     numberGuess = parseInt(prompt('too low guess again.'));
+    counter ++;
   } else {
     numberGuess = parseInt(prompt('too high. guess again.'));
+    counter ++;
   } 
 }
-console.log(counter);
-console.log(numberGuess);
+console.log('counter',counter);
+console.log('numberGuess',numberGuess);
 
 
 
